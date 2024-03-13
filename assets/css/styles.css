@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* reuse */
+.mt-30-persen {
+    margin-top: 30%;
+}
+
+.mt-10-persen {
+    margin-top: 10%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 350px;
+}
+
+/* header */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    padding: .6%;
+    padding-left: 0;
+    padding-right: 0;
+    position: absolute;
+}
+
+.header a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+/* hero */
+
+.hero {
+    width: 100%;
+}
+
+.hero-img img {
+    max-width: 100%;
+    margin-top: 22px;
+}
+
+/* afproduct list */
+
+.afproduct {
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+.afproduct-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.afproduct-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
+    background-color: #A76BFF;
+}
+
+
+.afproduct-card i {
+    font-size: 25px;
+    background-color: #D0F601;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+/* dashboard */
+
+.dashb {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashb-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.dash-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashb-add-btn {
+    color: black;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 4px 10px;
+}
+
+.dashb-home-btn {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.dashb-logout-btn {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+
+}
+
+.edit {
+    color: black;
+}
+
+.delete {
+    color: #000000;
+}
+
+/* input */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 93%;
+}
+
+.inp-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inp-btn a {
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.inp-btn input[type="submit"] {
+    background-color: black;
+    padding: 7px 25px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* search */
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    top: 0;
+    position: sticky;
+}
+
+.search-container input[type="text"] {
+    background-color: #D0F601;
+}
+
+.search-container button {
+    border: 2px black solid;
+    border-radius: 10px;
+    background-color: #A76BFF;
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
