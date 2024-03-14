@@ -57,3 +57,25 @@ var searchInput = document.getElementById('searchInput');
         window.onload = function() {
             search(searchInput.value);
         };
+
+
+// scrolltop
+// Saat dokumen dimuat
+window.onload = function () {
+    // Ketika pengguna menggulir ke bawah 20px dari puncak dokumen, tampilkan tombol
+    window.onscroll = function () { scrollFunction() };
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollToTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollToTopBtn").style.display = "none";
+    }
+}
+
+// Fungsi untuk menggulir ke atas saat tombol diklik
+function topFunction() {
+    document.body.scrollTop = 0; // Untuk Safari
+    document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
+}

@@ -53,6 +53,8 @@ $result = mysqli_query($conn, $sql);
         </div>
     </section>
 
+    <button onclick="topFunction()" id="scrollToTopBtn" title="Go to top"><i class="uil uil-angle-up"></i></button>
+
 
     <br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br>

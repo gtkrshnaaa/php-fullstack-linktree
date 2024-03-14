@@ -13,6 +13,10 @@
     margin-top: 10%;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -219,4 +223,31 @@ input[type="password"] {
     padding: 15px;
     font-weight: 600;
     cursor: pointer;
+}
+
+/* scrolltop */
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 2px solid black;
+    outline: none;
+    background-color: #A76BFF;
+    color: #000000;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+#scrollToTopBtn i {
+    font-size: 40px;
+}
+
+#scrollToTopBtn:hover {
+    background-color: #D0F601;
 }
